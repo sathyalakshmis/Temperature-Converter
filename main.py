@@ -1,20 +1,18 @@
 from tkinter import *
+
 ws = Tk()
 ws.geometry('400x200')
 ws.title('Temperature Converter')
 
 f = ("Times bold", 14)
 
-
 def C_to_F():
     ws.destroy()
     import C_to_F
 
-
 def F_to_C():
     ws.destroy()
     import F_to_C
-
 
 Label(
     ws,
