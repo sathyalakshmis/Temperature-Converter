@@ -6,13 +6,16 @@ ws.title('°C to °F')
 
 f = ("Times bold", 14)
 
+
 def main():
     ws.destroy()
     import main
 
-def C_to_F():
+
+def F_to_C():
     ws.destroy()
-    import C_to_F
+    import F_to_C
+
 
 Label(
     ws,
@@ -24,10 +27,12 @@ Label(
 input = Entry()
 input.pack()
 
+
 def convertCF():
     temp = float(input.get())
     temp_F = temp*9/5+32
     ans['text'] = 'Temperature in Fahrenheit is: '+str(int(temp_F))+'°F'
+
 
 button = Button(text='Convert', command=convertCF)
 button.pack()
@@ -46,7 +51,7 @@ Button(
     ws,
     text="°F to °C",
     font=f,
-    command=C_to_F
+    command=F_to_C
 ).pack(fill=X, expand=TRUE, side=LEFT)
 
 ws.mainloop()
